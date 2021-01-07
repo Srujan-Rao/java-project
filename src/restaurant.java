@@ -1,13 +1,9 @@
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import javax.swing.JOptionPane;
-import java.util.Timer;
 import java.util.Date;
 
 
@@ -19,7 +15,7 @@ import java.util.Date;
 
 /**
  *
- * @author AreeshaJiwani
+ * 
  */
 public class restaurant extends javax.swing.JFrame {
 
@@ -134,13 +130,13 @@ public class restaurant extends javax.swing.JFrame {
         lblD2.setText("Cappuccino");
 
         lblD3.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblD3.setText("Classic Vanilla");
+        lblD3.setText("Litchi Delight");
 
         lblD4.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         lblD4.setText("Hot Chocolate");
 
         lblD5.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblD5.setText("Chocolate Milk Shake");
+        lblD5.setText("Falooda");
 
         txtD1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         txtD1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -167,7 +163,7 @@ public class restaurant extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(110, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(116, 116, 116))
             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -175,24 +171,24 @@ public class restaurant extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(lblD3)
-                        .addGap(137, 137, 137)
-                        .addComponent(txtD3))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(lblD1)
-                        .addGap(164, 164, 164)
-                        .addComponent(txtD1, javax.swing.GroupLayout.DEFAULT_SIZE, 18, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(lblD2)
-                        .addGap(151, 151, 151)
-                        .addComponent(txtD2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtD3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblD4)
                             .addComponent(lblD5))
-                        .addGap(78, 78, 78)
+                        .addGap(109, 109, 109)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtD5)
-                            .addComponent(txtD4))))
+                            .addComponent(txtD4)
+                            .addComponent(txtD5)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblD1)
+                            .addComponent(lblD2))
+                        .addGap(98, 98, 98)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtD2)
+                            .addComponent(txtD1))))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -223,7 +219,7 @@ public class restaurant extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, 340, 210));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 340, 230));
 
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 51), 4));
 
@@ -346,7 +342,7 @@ public class restaurant extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 340, 100));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, 340, 110));
 
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 51), 4));
 
@@ -360,13 +356,13 @@ public class restaurant extends javax.swing.JFrame {
         lblM2.setText("South Indian Thali");
 
         lblM3.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblM3.setText("Chicken Legend");
+        lblM3.setText("Biryani");
 
         lblM4.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblM4.setText("Chicken Burger Meal");
+        lblM4.setText("Roti Curry");
 
         lblM5.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        lblM5.setText("Bacon & Cheese Burger");
+        lblM5.setText("Chinese meal");
 
         txtM1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         txtM1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -388,38 +384,41 @@ public class restaurant extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addComponent(lblM2)
+                        .addGap(73, 73, 73)
+                        .addComponent(txtM2, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(lblM2)
-                                .addGap(129, 129, 129)
-                                .addComponent(txtM2, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(lblM3)
-                                        .addGap(125, 125, 125))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(lblM1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGap(62, 62, 62)))
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtM1)
-                                    .addComponent(txtM3)))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(lblM4)
-                                .addGap(85, 85, 85)
-                                .addComponent(txtM4))))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(126, 126, 126)
-                        .addComponent(jLabel3)
+                                .addGap(114, 114, 114)
+                                .addComponent(jLabel3))
+                            .addComponent(lblM5))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblM5)
-                        .addGap(62, 62, 62)
-                        .addComponent(txtM5)))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(txtM5, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblM4)
+                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(jPanel5Layout.createSequentialGroup()
+                                    .addComponent(lblM3)
+                                    .addGap(125, 125, 125))
+                                .addGroup(jPanel5Layout.createSequentialGroup()
+                                    .addComponent(lblM1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGap(62, 62, 62))))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtM3, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE)
+                                    .addComponent(txtM4)))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(txtM1)))))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -450,7 +449,7 @@ public class restaurant extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 340, 210));
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 340, 230));
 
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 51), 4));
 
@@ -541,7 +540,7 @@ public class restaurant extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 340, 100));
+        getContentPane().add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 340, 110));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/restaurant.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 540));
@@ -610,17 +609,17 @@ public class restaurant extends javax.swing.JFrame {
 
     private void btnTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTotalActionPerformed
         // TODO add your handling code here:
-        double a = Double.parseDouble(txtM1.getText()) * 5;
-        double b = Double.parseDouble(txtM2.getText()) * 7;
-        double c = Double.parseDouble(txtM3.getText()) * 7;
-        double d = Double.parseDouble(txtM4.getText()) * 4;
-        double e = Double.parseDouble(txtM5.getText()) * 6;
+        double a = Double.parseDouble(txtM1.getText()) * 150;
+        double b = Double.parseDouble(txtM2.getText()) * 130;
+        double c = Double.parseDouble(txtM3.getText()) * 120;
+        double d = Double.parseDouble(txtM4.getText()) * 170;
+        double e = Double.parseDouble(txtM5.getText()) * 200;
         
-        double f = Double.parseDouble(txtD1.getText())* 3;
-        double g = Double.parseDouble(txtD2.getText())* 10;
-        double h = Double.parseDouble(txtD3.getText())* 4;
-        double i = Double.parseDouble(txtD4.getText())* 7;
-        double j = Double.parseDouble(txtD5.getText())* 6;
+        double f = Double.parseDouble(txtD1.getText())* 50;
+        double g = Double.parseDouble(txtD2.getText())* 75;
+        double h = Double.parseDouble(txtD3.getText())* 100;
+        double i = Double.parseDouble(txtD4.getText())* 80;
+        double j = Double.parseDouble(txtD5.getText())* 60;
         
         double mealTotal = a + b + c + d + e;
         double drinkTotal = f + g + h + i + j;
@@ -646,17 +645,17 @@ public class restaurant extends javax.swing.JFrame {
 
     private void btnReceiptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReceiptActionPerformed
         // TODO add your handling code here:
-        double a = Double.parseDouble(txtM1.getText()) * 5;
-        double b = Double.parseDouble(txtM2.getText()) * 7;
-        double c = Double.parseDouble(txtM3.getText()) * 7;
-        double d = Double.parseDouble(txtM4.getText()) * 4;
-        double e = Double.parseDouble(txtM5.getText()) * 6;
+         double a = Double.parseDouble(txtM1.getText()) * 150;
+        double b = Double.parseDouble(txtM2.getText()) * 130;
+        double c = Double.parseDouble(txtM3.getText()) * 120;
+        double d = Double.parseDouble(txtM4.getText()) * 170;
+        double e = Double.parseDouble(txtM5.getText()) * 200;
         
-        double f = Double.parseDouble(txtD1.getText())* 3;
-        double g = Double.parseDouble(txtD2.getText())* 10;
-        double h = Double.parseDouble(txtD3.getText())* 4;
-        double i = Double.parseDouble(txtD4.getText())* 7;
-        double j = Double.parseDouble(txtD5.getText())* 6;
+        double f = Double.parseDouble(txtD1.getText())* 50;
+        double g = Double.parseDouble(txtD2.getText())* 75;
+        double h = Double.parseDouble(txtD3.getText())* 100;
+        double i = Double.parseDouble(txtD4.getText())* 80;
+        double j = Double.parseDouble(txtD5.getText())* 60;
         
         double mealTotal = a + b + c + d + e;
         double drinkTotal = f + g + h + i + j;

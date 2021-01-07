@@ -49,9 +49,21 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("username");
+        jLabel1.setText("Username");
 
         jLabel2.setText("Password");
+
+        username.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                usernameKeyReleased(evt);
+            }
+        });
+
+        password.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passwordKeyReleased(evt);
+            }
+        });
 
         jButton1.setText("Sign Up");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -168,6 +180,17 @@ public class Login extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void usernameKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_usernameKeyReleased
+        // TODO add your handling code here:
+        lbl_username.setText("");
+    }//GEN-LAST:event_usernameKeyReleased
+
+    private void passwordKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordKeyReleased
+        // TODO add your handling code here:
+                lbl_password.setText("");
+
+    }//GEN-LAST:event_passwordKeyReleased
 
     /**
      * @param args the command line arguments
